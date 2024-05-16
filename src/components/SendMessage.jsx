@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 import { Handle, Position, useReactFlow } from "reactflow";
 
+import message from "./src/assets/message.svg";
+import whatsapp from "./src/assets/whatsapp.svg";
+
 function SendMessage({ data }) {
   const { setNodes } = useReactFlow();
 
@@ -14,7 +17,7 @@ function SendMessage({ data }) {
       <div className="w-full px-2 py-1 bg-[#b1ede3] grid grid-cols-[16px_1fr_16px]">
         <div className="aspect-square h-full flex justify-center items-center p-[2px]">
           <img
-            src="./src/assets/message.svg"
+            src={message}
             alt=""
             height={16}
             width={16}
@@ -34,7 +37,7 @@ function SendMessage({ data }) {
             className="size-full"
           /> */}
           <img
-            src="./src/assets/whatsapp.svg"
+            src={whatsapp}
             alt=""
             height={16}
             width={16}

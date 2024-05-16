@@ -6,6 +6,8 @@ import {
 } from "reactflow";
 import PropTypes from "prop-types";
 
+import cross from "./src/assets/cross.svg";
+
 function CustomEdge(data) {
   const { setEdges } = useReactFlow();
   const {
@@ -41,7 +43,7 @@ function CustomEdge(data) {
           className="size-6 font-semibold leading-4 text-[1.1rem] text-red-500 p-0 bg-white rounded-full border border-solid border-gray-400 flex justify-center items-center hover:cursor-pointer"
         >
           <img
-            src="./src/assets/cross.svg"
+            src={cross}
             alt="X"
             height={16}
             width={16}
