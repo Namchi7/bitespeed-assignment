@@ -1,3 +1,5 @@
+import back from "../assets/back.svg";
+
 function MessagePanel() {
   const dragStart = (e) => {
     e.dataTransfer.setData("Text", e.target.value);
@@ -7,7 +9,15 @@ function MessagePanel() {
   return (
     <div className="w-[300px] h-full flex flex-col justify-start items-start border border-solid border-gray-400">
       <div className="w-full p-2 grid grid-cols-[24px_1fr_24px] border-b border-b-solid border-b-gray-400">
-        <div className="">B</div>
+        <div className="aspect-square h-full flex justify-center items-center p-[2px] hover:cursor-pointer">
+          <img
+            src={back}
+            alt="<-"
+            height={16}
+            width={16}
+            className="size-full"
+          />
+        </div>
         <div className="text-center">Messages</div>
         <div></div>
       </div>

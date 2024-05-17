@@ -6,7 +6,7 @@ import {
 } from "reactflow";
 import PropTypes from "prop-types";
 
-import cross from "./src/assets/cross.svg";
+import cross from "../assets/cross.svg";
 
 function CustomEdge(data) {
   const { setEdges } = useReactFlow();

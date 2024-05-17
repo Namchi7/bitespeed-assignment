@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { Handle, Position, useReactFlow } from "reactflow";
 
-import message from "./src/assets/message.svg";
-import whatsapp from "./src/assets/whatsapp.svg";
+import message from "../assets/message.svg";
+import whatsapp from "../assets/whatsapp.svg";
 
 function SendMessage({ data }) {
   const { setNodes } = useReactFlow();
