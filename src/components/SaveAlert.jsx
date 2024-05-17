@@ -15,7 +15,7 @@ function SaveAlert() {
     <>
       <div
         style={{ display: "none" }}
-        className="absolute top-1 left-1/2 translate-x-[-50%] px-3 py-2 rounded-md text-black shadow-md "
+        className="absolute top-1 translate-y-[-25px] opacity-0 left-1/2 translate-x-[-50%] px-3 py-2 rounded-md text-black shadow-md animate-save-alert "
         data-save-alert
       ></div>
     </>
