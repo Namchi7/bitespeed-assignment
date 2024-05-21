@@ -10,7 +10,6 @@ import ReactFlow, {
 import "reactflow/dist/style.css";
 import SendMessage from "./SendMessage";
 import CustomEdge from "./CustomEdge";
-import showSaveAlert from "./SaveAlert";
 
 const nodeTypes = {
   sendMessage: SendMessage,
