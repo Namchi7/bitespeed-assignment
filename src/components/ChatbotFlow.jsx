@@ -10,6 +10,7 @@ import ReactFlow, {
 import "reactflow/dist/style.css";
 import SendMessage from "./SendMessage";
 import CustomEdge from "./CustomEdge";
+import showSaveAlert from "./SaveAlert";
 
 const nodeTypes = {
   sendMessage: SendMessage,
@@ -45,16 +46,21 @@ function ChatbotFlow() {
   const drop = (e) => {
     const locationX = Math.random() * 500;
     const locationY = Math.random() * 500;
-
-    setNodes((prev) => [
-      ...prev,
-      {
-        id: `${Date.now()}`,
-        position: { x: locationX, y: locationY },
-        data: { text: e.dataTransfer.getData("Text") },
-        type: "sendMessage",
-      },
-    ]);
+    if (
+      e.dataTransfer.getData("Text") !== "" &&
+      e.dataTransfer.getData("Text") !== undefined &&
+      e.dataTransfer.getData("Text") !== null
+    ) {
+      setNodes((prev) => [
+        ...prev,
+        {
+          id: `${Date.now()}`,
+          position: { x: locationX, y: locationY },
+          data: { text: e.dataTransfer.getData("Text") },
+          type: "sendMessage",
+        },
+      ]);
+    }
   };
 
   useEffect(() => {

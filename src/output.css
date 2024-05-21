@@ -659,6 +659,14 @@ video {
   animation: saveAlert 0.25s ease-in-out forwards;
 }
 
+.cursor-move {
+  cursor: move;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+
 .grid-cols-\[16px_1fr_16px\] {
   grid-template-columns: 16px 1fr 16px;
 }
@@ -838,6 +846,10 @@ video {
   font-size: 1.1rem;
 }
 
+.text-\[0\.85rem\] {
+  font-size: 0.85rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -928,4 +940,8 @@ a {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+.active\:cursor-grabbing:active {
+  cursor: grabbing;
 }

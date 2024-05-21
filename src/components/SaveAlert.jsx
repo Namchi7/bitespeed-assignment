@@ -1,8 +1,8 @@
-export const showSaveAlert = (save) => {
+export const showSaveAlert = (save, text) => {
   const saveAlertDiv = document.querySelector("[data-save-alert]");
 
   saveAlertDiv.style.backgroundColor = save ? "#4ade80" : "#f87171";
-  saveAlertDiv.innerText = save ? "Saved" : "Cannot save Flow";
+  saveAlertDiv.innerText = text;
   saveAlertDiv.style.display = "block";
 
   setTimeout(() => {

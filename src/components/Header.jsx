@@ -32,10 +32,9 @@ function Header() {
     if (connected) {
       localStorage.setItem("nodes", nodes);
       localStorage.setItem("edges", edges);
-      showSaveAlert(true);
+      showSaveAlert(true, "Saved");
     } else {
-      console.log("Do not save");
-      showSaveAlert(false);
+      showSaveAlert(false, "Cannot save Flow");
     }
   };
 

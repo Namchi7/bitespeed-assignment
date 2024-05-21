@@ -27,9 +27,13 @@ function MessagePanel() {
         <textarea
           draggable
           onDragStart={(e) => dragStart(e)}
-          className="w-full border border-solid border-gray-400"
+          className="w-full border border-solid border-gray-400 text-[0.9rem] cursor-grab active:cursor-grabbing p-2"
           rows={3}
         />
+
+        <p className="text-[0.85rem] text-gray-500">
+          Drag and drop the input field to the left section to add a new node.
+        </p>
       </div>
     </div>
   );
